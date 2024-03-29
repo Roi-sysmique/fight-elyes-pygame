@@ -63,7 +63,7 @@ class Obstacle(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.transform.rotozoom(pygame.image.load('Graphics/image_compromettante.png'), 0, 0.09)
         self.rect = self.image.get_rect()
-        self.rect.center = (SCREEN_WIDTH - 50, y_pos)
+        self.rect.center = (SCREEN_WIDTH + 50, y_pos)
 
     def update(self):
         global game_run
